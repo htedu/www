@@ -1,0 +1,98 @@
+.jo_ban{
+	height: 314px;
+	background: url(../img/join/top.png) no-repeat center left;
+	background-size: 100%;
+}
+.ides_tit{
+	margin-top: 85px;
+	border-bottom: 1px solid #999999;
+	line-height: 30px;
+	font-size: 12px;
+}
+.ides_tit p{
+	width: 114px;
+	margin: auto;
+}
+.ides_tit p.itc{
+	font-size: 20px;
+}
+.ides_tit p.ite{
+	padding-bottom: 38px;
+	color: #666666;
+	border-bottom: 1px solid #333333;
+}
+.ides_con{
+	margin-top: 54px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #666666;
+}
+.ides_con img{
+	margin: 50px auto;
+}
+.jobg{
+	height: 303px;
+	background: url(../img/join/top2.png) no-repeat center left;
+	background-size: 100%;
+}
+.jl ul{
+	border-right: 1px solid #666666;
+	margin: 100px 0 100px 20px;
+}
+.jl ul li{
+	line-height: 30px;
+	width: 292px;
+	font-size: 12px;
+	position: relative;
+	margin-bottom: 40px;
+}
+.jl ul li:last-child{
+	margin-bottom: 0;
+}
+.jl ul li img{
+	height: 30px;
+	width: 30px;
+	margin-right: 12px;
+}
+.jl ul li p{
+	position: absolute;
+	top: 0;
+	left: 42px; 
+	line-height: 25px;
+}
+.jr{
+	width: calc(100% - 352px);
+}
+.jr ul{
+	margin: 90px 0 0 30px;
+}
+.jr ul li .job_box img{
+	margin: 27px 0 0 10px;
+}
+.jr ul li .job_box img,
+.jr ul li .job_box span{
+	float: right;
+}
+.jr ul li{
+	width: 100%;
+	font-size: 14px;
+}
+.jr ul li a{
+	display: block;
+	line-height: 60px;
+	border-bottom: 1px dashed #666666;
+	font-size: 14px;
+}
+.jodes p{
+	line-height: 30px;
+}
+.jodes p.jdt{
+	color: #119e82;
+} 
+.jodes p.jdd{
+	color: #666666;
+	text-indent: 2em;
+}
+.jd-op a{
+	color: #119e82 !important;
+}

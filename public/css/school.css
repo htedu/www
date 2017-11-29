@@ -1,0 +1,128 @@
+.sch_mes{
+	margin-top: 10px;
+	box-sizing: border-box;
+	padding: 15px 30px 20px;
+	background: #eeeeee;
+	min-height: 400px;
+}
+.scm_l{
+	width: 233px;
+	height: 360px;
+	background: #ffffff;
+}
+.scm_l ul li{
+	line-height: 60px;
+	text-align: center;
+}
+.scm_l ul li.scv a,
+.scm_l ul li:hover a{
+	color: #13b393;
+}
+.scm_r{
+	width: 866px;
+}
+.scm_r ul li{
+	width: 423px;
+	height: 340px;
+	background: #ffffff;
+	float: left;
+	margin: 0 20px 20px 0;
+	position: relative;
+}
+.scm_r ul li:nth-child(2n){
+	margin-right: 0;
+}
+.sc-img{
+	width: 423px;
+	height: 193px;
+	overflow: hidden;
+}
+.sc-img img{
+	width: 423px;
+}
+.sc-inf{
+	padding: 0 16px;
+}
+.sc-name{
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+.sc-add,.sc-tel{
+	height: 25px;
+	font-size: 14px;
+	line-height: 25px;
+	color: #666666;
+}
+.sc-add{
+	margin: 7px 0;
+}
+.sc-add img,.sc-tel img{
+	height: 20px;
+	margin-right: 5px;
+}
+.sc-td{
+	width: 96px;
+	height: 24px;
+	background: url(../img/sch/sd_bg.png) no-repeat center;
+	position: absolute;
+	right: 0;
+	bottom: 16px;
+}
+.sc-td a{
+	display: block;
+	width: 96px;
+	height: 24px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 24px;
+}
+.scin{
+	width: 659px;
+	height: 427px;
+	background: #f5f3f6;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0px rgba(0,0,0,.8);
+	z-index: 9;
+	position: fixed;
+	top: 160px;
+	left: 552px;
+}
+.si_n{
+	box-sizing: border-box;
+	margin: 0 38px;
+	padding-top: 40px;
+	height: 95px;
+	line-height: 55px;
+	border-bottom: 1px #cecece solid;
+}
+.si_n p{
+	font-size: 24px;
+}
+.si_n span{
+	color: #666666;
+	font-size: 14px;
+	margin-left: 22px;
+}
+.si_c{
+	padding: 0 38px;
+	text-align: justify;
+	text-indent: 2em;
+	line-height: 25px;
+	margin-top: 20px;
+	max-height: 150px;
+	overflow-y: auto;
+	margin-bottom: 50px;
+}
+.si_a,.si_t{
+	line-height: 30px;
+	padding: 0 70px;
+}
+.si_a img,.si_t img{
+	margin-right: 5px;
+}
+.si_c span.sic_n{
+	font-size: 18px;
+	color: #1ea241;
+	line-height: 30px;
+}

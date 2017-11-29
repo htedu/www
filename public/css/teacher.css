@@ -1,0 +1,36 @@
+.tt_box{
+	height: 349px;
+	border-bottom: 1px solid #535353;
+	line-height: 20px;
+	background: #ffffff;
+}
+.timg{
+	width: 345px;
+	margin: 70px 70px 70px 0;
+	border-right: 1px solid #a49f9e;
+}
+.timg img{
+	width: 152px;
+}
+.timg p{
+	text-align: center;
+	font-size: 24px;
+	color: #0e7e68;
+	margin-top: 5px;
+}
+.tdes{
+	width: 679px;
+	margin: 70px auto;
+	font-size: 14px;
+}
+.tdes p{
+	margin-bottom: 35px;
+	max-height: 80px;
+	overflow: auto;
+}
+.tdes p:last-child{
+	margin-bottom: 0px;
+}
+.tdes p span{
+	color: #0e7e68;
+}

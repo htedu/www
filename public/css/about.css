@@ -1,0 +1,92 @@
+.abo_ban{
+	height: 412px;
+	background: url(../img/abo/abo_bg.png) 100% center no-repeat;
+	position: relative;
+}
+.abo_ban img{
+	position: absolute;
+	left: 66px;
+	bottom: -65px;
+}
+.abo_des{
+	width: 922px;
+	height: 1456px;
+	color: #666666;
+}
+.brt{
+	margin-top: 20px;
+	height: 43px;
+	line-height: 43px;
+	font-size: 18px;
+	color: #ffffff;
+	background: #f1f1f1;
+}
+.brt p{
+	width: 130px;
+	background: #119e82;
+}
+.brc{
+	line-height: 30px;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.brc p{
+	text-indent: 2em;
+	text-align: justify;	
+}
+.ab-con{
+	margin-top: 10px;
+}
+.ab-con p img{
+	margin-right: 10px;
+}
+.ab-con p span{
+	font-size: 24px;
+	color: #119e82;
+}
+.br_sd{
+	margin-top: 10px;
+	margin-left: 5px;
+	padding: 20px 0 20px 30px;
+	border-left: 2px #119e82 solid;
+	letter-spacing: .1em;
+}
+.br_sd p{
+	line-height: 35px;
+}
+.vla .br_sd ul li{
+	float: left;
+	width: 347px;
+	margin-right: 15px;
+}
+.vla .br_sd ul li:nth-child(2n){
+	margin-right: 0;
+}
+.vla .br_sd ul li div{
+	text-align: center;
+	height: 87px;
+	line-height: 87px;
+	background: #b49988;
+	color: #ffffff;
+	font-size: 24px;
+}
+.vla .br_sd ul li div span{
+	font-size: 16px;
+	margin-left: 12px;
+}
+.vla .br_sd ul li:nth-child(2) div{
+	background: #b3b3b3;
+}
+.vla .br_sd ul li:nth-child(3) div{
+	background: #6ac3d0;
+}
+.vla .br_sd ul li:nth-child(4) div{
+	background: #d08e64;
+}
+.vla .br_sd ul li:nth-child(5) div{
+	background: #ada658;
+}
+.vla .br_sd ul li p{
+	font-size: 14px;
+	line-height: 25px;
+}

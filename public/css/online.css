@@ -1,0 +1,155 @@
+.les_ch{
+	box-sizing: border-box;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	padding: 0 25px;
+}
+.les_ch ul{
+	box-sizing: border-box;
+	height: 62px;
+	border-bottom: 1px solid #eeeeee;
+}
+.les_ch span{
+	height: 62px;
+}
+.les_ch li,
+.les_ch ul img,
+.les_ch ul span{
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	line-height: 62px;
+	float: left;
+}
+.les_ch ul img{
+	margin: 15px 6px 0 0;
+}
+.les_ch ul li{
+	cursor: pointer;
+	margin: 10px 30px 10px 0;
+	line-height: 27px;
+	height: 27px;
+	padding: 7px 10px;
+	border-radius: 8px;
+}
+.les_ch ul li:last-child{
+	margin-right: 0;
+}
+.les_ch li:hover{
+	color: #ffffff;
+	background: #14b393;
+}
+.les_ch li.le_ced{
+	color: #ffffff;
+	background: #14b393;
+}
+.les-box{
+	margin-top: 15px;
+}
+.lbl{
+	width: 962px;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+}
+.le_box{
+	height: 150px;
+	padding: 30px 0 30px 0;
+	margin: 0 25px 0 15px;
+	border-bottom: 1px solid #a0a0a0;
+}
+.le_box .lb_img{
+	margin-right: 20px;
+}
+.le_box .lb_img,
+.le_box .lb_img img{
+	width: 150px;
+	height: 150px;
+}
+.lb_des{
+	box-sizing: border-box;
+	width: 609px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: justify;
+	padding-right: 40px;
+}
+.lb_des p.let{
+	font-size: 20px;
+	line-height: 30px;
+}
+.lb_des p.led span{
+	display: block;
+	height: 40px;
+	float: left;
+}
+.lb_btn{
+	border-left: 1px dashed #999999;
+}
+.lb_btn a{
+	display: block;
+	width: 120px;
+	height: 40px;
+	border: 1px solid #14b393;
+	border-radius: 10px;
+	line-height: 40px;
+	color: #14b393;
+	margin: 55px auto 55px 20px;
+}
+.lbr{
+	box-sizing: border-box;
+	width: 232px;
+	height: 322px;
+	background: #ffffff;
+	border: 1px solid #eaeaea;
+	margin-left: 4px;
+	padding: 0 23px;
+}
+ul.rle_list{
+	height: 100%;
+	background: url(../img/onl/num.jpg)no-repeat left 48px;
+}
+.rle_list li{
+	height: 13px;
+	line-height: 13px;
+	text-indent: 28px;
+	margin: 12.8px 0;
+	font-size: 13px;
+}
+.rle_list li:nth-child(2){
+	margin-top: 27px;
+}
+.rle_list li:first-child{
+	line-height: 22px;
+	height: 22px;
+	margin: 14px 0 22px 0;
+}
+.rle_list li p{
+	font-size: 18px;
+	border-left: 5px solid #14b393;
+	text-indent: 12px;
+}
+ol.le_page{
+	width: 282px;
+	margin: auto;
+}
+ol.le_page li{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	margin: 15px 0;
+	text-align: center;
+	font-size: 14px;
+}
+ol.le_page li a{
+	color: #666666;
+}
+ol.le_page li:nth-child(2){
+	margin: 15px 25px;
+	color: #666666;
+}
+ol.le_page li:first-child,
+ol.le_page li:last-child{
+	width: 82px;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+}

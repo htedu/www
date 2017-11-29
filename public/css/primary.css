@@ -1,0 +1,179 @@
+.time_axis{
+	height: 155px;
+	background: #ffffff;
+	margin-top: 15px;
+}
+.ta_left{
+	width: 155px;
+	height: 100%;
+	background: url(../img/pri/time_bg.gif) center right no-repeat;
+}
+.ta_right{
+	width: calc(100% - 155px);
+}
+.ta_bg{
+	width: 100%;
+	height: 63px;
+	background: url(../img/pri/biaoqiam.gif) center no-repeat;
+}
+.ta_mon{
+    height: 25px;
+    margin-top: 5px;
+    background: url(../img/pri/line.gif) 5px repeat-x;
+}
+.ta_mon a{
+	display: block;
+	float: left;
+	width: 65px;
+	height: 25px;
+	border-radius: 5px;
+	background: #999999;
+	margin-right: 20px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 25px;
+}
+.ta_mon a:hover{
+	background: #13b393;	
+}
+.ta_mon a.ta_mon_hov{
+	background: #13b393;	
+}
+.ta_des p{
+	color: #13b393;
+	margin-top: 20px;
+}
+.con_sign{
+	margin-top: 17px;
+	height: 107px;
+	background: url(../img/pri/ban_sign.jpg) center no-repeat;
+}
+.pri_gra{
+	padding-top: 40px;	
+}
+.pri_tit{
+	color: #666666;
+	font-size: 36px;
+}
+.gra_des{
+	margin-top: 30px;
+	height: 298px;
+	background: url(../img/pri/gra_bg.jpg) center no-repeat;
+}
+.gra_des ul{
+	box-sizing: border-box;
+	width: 1008px;
+	margin: 0 auto;
+	padding: 58px 0 0 8px;
+	overflow: hidden;
+}
+.gra_des ul li{
+	color: #ffffff;
+	box-sizing: border-box;
+	padding: 20px 45px 0;
+	width: 33%;
+	float: left;
+}
+.gra_des ul li:nth-child(2){
+	color: #333333;
+}
+.gra_des ul li p.gra_nstage{
+	text-align: center;
+	font-size: 24px;
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.gra_des ul li:nth-child(2) p.gra_nstage{
+	border: 1px solid #333333;
+}
+.gra_des ul li p.gra_dstage{
+	line-height: 30px;
+	text-align: justify;
+}
+.pri_sys{
+	background: #ffffff;
+	padding-top: 25px;
+	margin-top: 30px;
+}
+.sys_des ul{
+	box-sizing: border-box;
+	margin-top: 40px;
+	padding: 0 31px;
+}
+.sys_des ul li{
+	float: left;
+	width: 326px;
+	height: 332px;
+	margin-right: 80px;
+	background: url(../img/pri/sys_bg.jpg) center no-repeat;
+	position: relative;
+}
+.sys_des ul li:last-child{
+	margin-right: 0;
+}
+.sys_des ul li p.sys_dte{
+	box-sizing: border-box;
+	font-size: 14px;
+	text-align: justify;
+	padding: 0 15px;
+	position: absolute;
+	top: 105px;
+	line-height: 25px;
+}
+.sys_des ul li p.sys_dte span{
+	display: block;
+	text-align: center;
+}
+.sys_des ul li p.sys_dti{
+	color: #ffffff;
+	line-height: 43px;
+	position: absolute;
+	bottom: 0px;
+	left: 68px;
+}
+.pri_dre{
+	box-sizing: border-box;
+	height: 723px;
+	padding-top: 60px;
+	background: #ffffff;
+}
+.dre_tit{
+	margin-bottom: 32px;
+}
+.dre_des{
+	height: 603px;
+	width: 1197px;
+	margin: auto;
+	background: url(../img/pri/dre_bg.png) top center no-repeat;
+	position: relative;
+}
+.dre_des p{
+	position: relative;
+	width: 320px;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
+}
+.dre_des p.dds-1{
+    top: 64px;
+    left: 400px;
+}
+.dre_des p.dds-2{
+	top: 164px;
+    left: 200px;
+    width: 360px;
+}
+.dre_des p.dds-3{
+	top: 255px;
+    left: 540px;
+    width: 350px;
+}
+.dre_des p.dds-4{
+    top: 5px;
+    left: 910px;
+    width: 260px;
+}

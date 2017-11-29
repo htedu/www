@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>华拓责创教育集团</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta HTTP-EQUIV="Window-target" CONTENT="_top" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta HTTP-EQUIV="Pragma" CONTENT="public">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="1600">
+    <meta name="description" content="华拓教育" />
+    <meta name="keywords" content="华拓教育" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/school.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qdy5pBh17Rat8fraKTTUiiERp1zoDGUA"></script>
+    <script src="js/school.js"></script>
+</head>
+<body>
+
+<header>
+	<div class="head bw">
+		<div class="logo fl">
+			<a href="#"><img src="img/logo/logo.png" alt="华拓教育"></a>
+		</div>
+		<div class="city_cut fl">
+			<div class="city_sec">
+				<span>赤峰</span>
+				<img class="fr" src="img/index/list.png" alt="city_list">
+			</div>
+			<div class="city_list" hidden>
+				<ol>
+					<li class="let_mod">
+						<span>B</span>
+						<ul>
+							<li><a href="#">包头</a></li>
+							<li><a href="#">北京</a></li>
+						</ul>
+					</li>
+					<li class="let_mod">
+						<span>C</span>
+						<ul>
+							<li><a href="#">赤峰</a></li>
+						</ul>
+					</li>
+					<li class="let_mod">
+						<span>H</span>
+						<ul>
+							<li><a href="#">呼和浩特</a></li>
+						</ul>
+					</li>
+					<li class="let_mod">
+						<span>T</span>
+						<ul>
+							<li><a href="#">通辽</a></li>
+						</ul>
+					</li>
+					<li class="let_mod">
+						<span>W</span>
+						<ul>
+							<li><a href="#">乌海</a></li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="head_mark fr">
+			<div class="tel fl">
+				<p>全国统一提分热线：<span>400-0476-123</span></p>
+			</div>
+			<div class="chat fl">
+				<ul>
+					<li class="qq_box">
+						<img class="qq" src="img/index/qq.png" alt="QQ" title="点击咨询" hidden>
+						<img class="qq_hov" src="img/index/qq_hov.png" alt="QQ" title="点击咨询">
+					</li>
+					<li class="wei_box">
+						<img class="wei" src="img/index/weixin.png" alt="Wechat" hidden>
+						<img class="wei_hov" src="img/index/weixin_hov.png" alt="Wechat">
+						<img class="qr qr_wei" src="img/index/qr_wei.jpg" alt="公众号：华拓责创" hidden>
+					</li>
+					<li class="sina_box">
+						<img class="sina" src="img/index/weibo.png" alt="Sina" hidden>
+						<img class="sina_hov" src="img/index/weibo_hov.png" alt="Sina">
+						<img class="qr qr_sina" src="img/index/qr_sina.jpg" alt="微博：华拓教育集团" hidden>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cb"></div>
+	</div>
+	<div class="head_menu">
+		<div class="menu_list bw">
+			<ul>
+				<li><a href="../">首页</a></li>
+				<li><a href="primary.html">小学辅导</a></li>
+				<li><a href="junior.html">初中辅导</a></li>
+				<li><a href="high.html">高中辅导</a></li>
+				<li><a href="online.html">在线报名</a></li>
+				<li><a href="http://www.zecedu.com/" target="_blank">责创培优</a></li>
+				<li><a class="hm_sel" href="school.html">校区分布</a></li>
+				<li><a href="teacher.html">华拓名师</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="join.html">招贤纳士</a></li>
+				<li><a href="http://htzb.htedu.net.cn/" target="_blank">直播课堂</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<section class="contain">	
+    <div class="sch_map bw">
+        <div style="height:386px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+        <p style="color:red;font-weight:600">
+            <a href="http://developer.baidu.com/map.php?title=jspopular/guide/introduction" style="color:#2f83c7"
+               target="_blank"></a>
+            <a href="http://lbsyun.baidu.com/apiconsole/key?application=key" style="color:#2f83c7" target="_blank"></a>
+        </p>
+    </div>
+    <div class="bw sch_mes">
+		<div class="scm_l fl">
+			<ul>
+				<li data-fd="cf" class="scv"><a href="javascript:;">赤峰校区</a></li>
+				<li data-fd="tl"><a href="javascript:;">通辽校区</a></li>
+				<li data-fd="wh"><a href="javascript:;">乌海校区</a></li>
+				<li data-fd="bt"><a href="javascript:;">包头校区</a></li>
+				<li data-fd="hs"><a href="javascript:;">呼市校区</a></li>
+				<li data-fd="bj"><a href="javascript:;">北京校区</a></li>
+			</ul>
+		</div>
+		<div class="scm_r fr">
+			<ul class="cf">
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/wanda.png" alt="赤峰">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">赤峰万达校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						赤峰万达百货五楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						15124935316</p>
+					</div>
+					<div class="sc-td tc" data-sde="于2016年1月6日成立，位于红山区万达广场万达百货五楼，系原华拓教育金帝校区前身。教学面积5000平米，现拥有个性化一对一教室60间、一对三教室20间、班课教室40间、VIP教室6间，同时配备教师办公室、学管师办公室、咨询师办公室、餐厅及高端水吧多间。学校拥有金牌教师80人，已形成一支师德高尚、素质优良、教学经验丰富的师资团队。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/weiduoli.png" alt="赤峰">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">赤峰维多利校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						赤峰红山区维多利大厦六楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						18747155929</p>
+					</div>
+					<div class="sc-td tc" data-sde="成立于2014年7月，地处赤峰城市中心维多利广场6楼，教学面积2000多平方米，是赤峰华拓教育集团首个VIP一对一示范校区。校区拥有一对一,小班课，多媒体教室八十余间，教职工百余人。学校本着教好每一位学生的教育理念，成功帮助数千名学子考上理想学府。受到广大师生好评！">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/hongxing.png" alt="赤峰">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">赤峰宏兴校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						赤峰红山区昭乌达路宏兴大厦7楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						18747170026</p>
+					</div>
+					<div class="sc-td tc" data-sde="位于昭乌达路宏兴大厦6楼、7楼。教学面积700平米。2011年6月，赤峰华拓教育集团首家一对一个性化教育机构诞生于此。宏兴校区现有初高中教师30人。高级学习管理咨询师3人。宏兴校区遵照集团的教育方针和教育理念，针对不同学生的性格特点，受教育环境，实施精准化教育和个性化辅导。几年来取得了优异的成绩，受到家长的高度赞誉。宏兴校区全体教师以高度的责任心和工作热情，践行“想上好高中，就来找宏兴”迎接四方学子，全体教师坚守着”禅心育学子、大德惠民生”的理想和信念，坚守着华拓教育集团发展壮大的发祥之地，为赤峰学子步入重点高中尽心竭力、搭桥铺路。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/yongye.png" alt="赤峰">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">赤峰永业校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						赤峰永业广场A座15楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">13113552855</p>
+					</div>
+					<div class="sc-td tc" data-sde="成立于2013年12月，前身为松山校区，地处松山区黄金地段永业广场A座15楼。学环境的优劣同样也是学生提升成绩的重要因素。华拓教育集团依托强大的资金支持，为学生创造了一流的教学环境。特别是为艺考生设立了VIP独立书房，使嘈杂的环境不干扰学生的学习，能使学生全神贯注，大大提升学习环境。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/keqi.png" alt="赤峰">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">赤峰克旗校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						赤峰克什克腾旗维多利广场4楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">13948768533</p>
+					</div>
+					<div class="sc-td tc" data-sde="是华拓教育于2014年8月成立的第六家分校区，我校致力于一对一教学模式，独特的一对一教育辅导针对每一个孩子不同的学习情况和不同心理的情况，制定具有针对性的、独特的、行之有效的辅导方案。校区自习室8个，旨在为学生提供宽敞明亮、安静舒适的学习环境，让孩子在最优质的环境下学习，及时对所学知识进行了解、吸收，做到课课清;一对一上课教室20多个，让老师在最安静的环境下传授知识，让孩子在最轻松地氛围里专心学习。我校同时配备尖端教师团队，教师专业水平一流，教学经验丰富，部分教师荣获“区级教学能手”、“市级教学能手”称号。同时运用最新型的教育教学模式，让孩子在学习中找到乐趣、培养兴趣，从而爱上学习。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="tl" hidden>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/tongliaowanda.png" alt="通辽">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">通辽万达校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						通辽万达百货三楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						18647519798</p>
+					</div>
+					<div class="sc-td tc" data-sde="是华拓教育于2014年8月成立的第六家分校区，我校致力于一对一教学模式，独特的一对一教育辅导针对每一个孩子不同的学习情况和不同心理的情况，制定具有针对性的、独特的、行之有效的辅导方案。校区自习室8个，旨在为学生提供宽敞明亮、安静舒适的学习环境，让孩子在最优质的环境下学习，及时对所学知识进行了解、吸收，做到课课清;成立于2016年6月， 学校占地面积3700多平米，我们办学模式：专注于一对一、一对三培优班、初高三待考班、艺考班、小初升，初升高预科班，针对性强，能根据学生性格特征，学习情况，制定科学有效的个性化辅导方案，最终实践“让学生成为一名出色的学习者“教育观念。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/tongliaowoerma.png" alt="通辽">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">通辽沃尔玛校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						通辽中启广场沃尔玛四楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						18748048809</p>
+					</div>
+					<div class="sc-td tc" data-sde="成立于2015年6月，教学面积300多平方米，是一家拥有着优质教育教学资源和先进信息技术的教育企业，也是华拓教育集团“走出赤峰”的第一家分校。现有60人的教师队伍，师资力量雄厚、教学水平精湛。有着独特的教学方式方法，取得优异成绩，深得广大学子和家长们的信赖和给好评。;一对一上课教室20多个，让老师在最安静的环境下传授知识，让孩子在最轻松地氛围里专心学习。我校同时配备尖端教师团队，教师专业水平一流，教学经验丰富，部分教师荣获“区级教学能手”、“市级教学能手”称号。同时运用最新型的教育教学模式，让孩子在学习中找到乐趣、培养兴趣，从而爱上学习。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="wh" hidden>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/wuhai.png" alt="乌海">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">乌海万达校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						乌海万达商业广场3楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						13847321264</p>
+					</div>
+					<div class="sc-td tc" data-sde="成立于2016年6月， 坐落于乌海市万达广场三层， 教学面积4000多平方米。该校区教学设备完善，环境建设优美，师资力量雄厚。现有各类班级43个，可同时容纳1000名学生上课。;一对一上课教室20多个，让老师在最安静的环境下传授知识，让孩子在最轻松地氛围里专心学习。我校同时配备尖端教师团队，教师专业水平一流，教学经验丰富，部分教师荣获“区级教学能手”、“市级教学能手”称号。同时运用最新型的教育教学模式，让孩子在学习中找到乐趣、培养兴趣，从而爱上学习。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="bt" hidden>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/baotou.png" alt="包头">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">包头万达校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						包头万达广场（百货）5楼华拓教育</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						13337186955</p>
+					</div>
+					<div class="sc-td tc" data-sde="位于青山区万达百货五楼，教学面积3700多平方米，开设一对一个性化辅导、一对三哈佛案例教学、阶段性冲刺班、中/高考全天候待考班、VIP精品自习室，并有包头首家中/高考保分班。包头华拓教育秉承总部“让学生成为一名出色的学习者”的理念，以久经历练敬业、专业的师资队伍为依托，以经历丰富的教育咨询师为先导，以耐心热情的学习管理师为保障，以分工明确的后勤管理为支撑，提升学生学习兴趣和能力，满足学生的学习需要，“为学生创造未来，为家长创造价值，为社会创造和谐。;一对一上课教室20多个，让老师在最安静的环境下传授知识，让孩子在最轻松地氛围里专心学习。我校同时配备尖端教师团队，教师专业水平一流，教学经验丰富，部分教师荣获“区级教学能手”、“市级教学能手”称号。同时运用最新型的教育教学模式，让孩子在学习中找到乐趣、培养兴趣，从而爱上学习。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="hs" hidden>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/hushi.png" alt="呼市">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">呼市校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						呼和浩特市新城区新华大街富邦大厦四楼华拓教育责创培优</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						15247173518</p>
+					</div>
+					<div class="sc-td tc" data-sde="成立于2017年6月，位于新城区新华大街富邦大厦（金锐家具）四楼，教学面积5000余平方米，是华拓教育首家以培优为主的现代化多媒体教学的校区。</p><p>责创培优依附于强大的师资团队、教研团队、信息团队、科技团队，为学生定制了全新的窍板语文、归易数学、凡爱英语等优秀培优课程。我们关注学生每一次疑惑、每一道错题、每一次考试，我们用心呵护学生的进步，为学生的进步提供坚实的保障，把学生退步的可能性降为零。培养学科优秀学生，让学生在中考取得优异成绩。培养学生优秀品质，让学生成为一名出色的学习者。;一对一上课教室20多个，让老师在最安静的环境下传授知识，让孩子在最轻松地氛围里专心学习。我校同时配备尖端教师团队，教师专业水平一流，教学经验丰富，部分教师荣获“区级教学能手”、“市级教学能手”称号。同时运用最新型的教育教学模式，让孩子在学习中找到乐趣、培养兴趣，从而爱上学习。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="bj" hidden>
+				<li>
+					<div class="sc-img">
+						<img src="img/sch/beijing.png" alt="北京">
+					</div>
+					<div class="sc-inf">
+						<p class="sc-name">北京国贸校区</p>
+						<p class="sc-add">
+						<img src="img/sch/sc_ad.png" alt="">
+						北京国贸三期</p>
+						<p class="sc-tel">
+						<img src="img/sch/sc_tel.png" alt="">
+						400-0476-123</p>
+					</div>
+					<div class="sc-td tc" data-sde="成立于2016年6月，位于北京市国贸大厦三期，教学面积1000余平方米，是华拓教育集团首家QTO网校。北京校区凭借全新的运营模式，汇聚行业顶尖教学专家，以高质量深度内容研发和系统知识切片为核心，同时又精于在线教育产品的学习体验设计，既打破了传统面授的诸多限制，发挥了在线教育的优势，同时结合线下传统面授及服务，形成更科学更高效的OTO学习系统。">
+						<a href="javascript:;">查看详情</a>
+					</div>
+				</li>
+			</ul>
+			<div class="scin" hidden>
+				<div class="si_cl fr">
+					<a href="javascript:;"><img src="img/sch/si_clo.png" alt="关闭"></a>
+				</div>
+				<div class="si_n">
+					<p>校区介绍<span>intro</span></p>
+				</div>
+				<div class="si_c">
+					<!-- <p><span class="sic_n">万达校区</span>于2016年1月6日成立，位于红山区万达广场万达百货五楼，系原华拓教育金帝校区前身。教学面积5000平米，现拥有个性化一对一教室60间、一对三教室20间、班课教室40间、VIP教室6间，同时配备教师办公室、学管师办公室、咨询师办公室、餐厅及高端水吧多间。学校拥有金牌教师80人，已形成一支师德高尚、素质优良、教学经验丰富的师资团队。</p> -->
+				</div>
+				<div class="si_a">
+					<!-- <p><img src="img/sch/sc_ad.png" alt="地址">赤峰万达百货五楼华拓教育</p> -->
+				</div>
+				<div class="si_t">
+					<!-- <p><img src="img/sch/sc_tel.png" alt="电话">15124935316</p> -->
+				</div>
+			</div>
+		</div>
+		<div class="cb"></div>
+    </div>
+</section>
+<footer>
+	<div class="href_box bw">
+		<ul>
+			<li><span>友情链接：</span></li>
+			<li><a href="http://www.zecedu.com" target="_blank">责创培优</a></li>
+			<li><a href="http://www.htintedu.com" target="_blank">华拓国际</a></li>
+			<li><a href="http://www.guangmingedu.com" target="_blank">赤峰光明学校</a></li>
+			<li><a href="http://edu.qq.com" target="_blank">腾讯教育网</a></li>
+			<li><a href="http://learning.sohu.com" target="_blank">搜狐教育网</a></li>
+			<li><a href="http://edu.people.com.cn" target="_blank">人民教育网</a></li>
+			<li><a href="http://edu.sina.com.cn" target="_blank">新浪教育</a></li>
+			<li><a href="https://open.163.com" target="_blank">网易公开课</a></li>
+			<li><a href="http://www.51edu.com" target="_blank">精品学习网</a></li>
+			<li><a href="http://www.zaobao.com/lifestyle/education" target="_blank">联合早报</a></li>
+		</ul>
+	</div>
+	<div class="foot_nav">
+		<ul>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">华拓名师</a></li>
+			<li><a href="school.html">校区分布</a></li>
+			<li><a href="#">招贤纳士</a></li>
+		</ul>
+	</div>
+	<div class="foot_box">
+		<div class="foot_mian">
+			<div class="fm_con">
+				<div class="fo_sign tc">
+					<p>让学生成为一名出色的学习者</p>
+				</div>
+				<div class="fo_pro tc">
+					<a href="primary.html">小学辅导</a>
+					<a href="junior.html">初中辅导</a>
+					<a href="high.html">高中辅导</a>
+					<a href="1v1.html">VIP一对一</a>
+				</div>
+				<div class="fo_tel tc">
+					<p>学习热线 : 400-0476-123</p>
+				</div>
+				<img class="fo_wqr" src="img/index/qr_wei.jpg" alt="公众号：华拓责创">
+			</div>
+		</div>
+		<div class="icp_num tc">
+			<p>Copyright 2016.ALL Rights Reserved. 华拓教育 版权所有 蒙ICP备13003523号-1号</p>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap() {
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(114.548361, 40.458207), 6);
+    }
+    function setMapEvent() {
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target, window) {
+        target.addEventListener("click", function () {
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay() {
+        var markers = [
+            {
+                content: "地址：赤峰市万达百货五楼<br>" +
+                "联系电话：18204953560<br>",
+                title: "赤峰万达校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 42.259544, lng: 118.922785}
+            },
+            {
+                content: "地址：红山区昭乌达路新泰和宾馆对面宏兴大厦7楼<br>" +
+                "联系电话：18747170026",
+                title: "赤峰宏兴校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 42.269006, lng: 118.964242}
+            },
+            {
+                content: "地址：红山区维多利大厦六楼<br>" +
+                "联系电话：18747155929",
+                title: "维多利校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 42.279948, lng: 118.967826}
+            },
+            {
+                content: "地址：永业广场A座15楼<br>" +
+                "联系电话：13113552855",
+                title: "永业校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 42.291714, lng: 118.939161}
+            },
+            {
+                content: "地址：维多利广场4楼<br>" +
+                "联系电话：13150920158",
+                title: "克旗校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 43.251809, lng: 117.543967}
+            },
+            {
+                content: "地址：中启广场沃尔玛4楼华拓教育<br>" +
+                "联系电话：18748048809",
+                title: "通辽沃尔玛校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 43.625797, lng: 122.273797}
+            },
+            {
+                content: "地址：通辽万达百货三楼华拓教育<br>" +
+                "联系电话：18647519798",
+                title: "通辽万达校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 43.636044, lng: 122.28949}
+            },
+            {
+                content: "地址：万达商业广场3楼华拓教育<br>" +
+                "联系电话：13847321264",
+                title: "乌海万达校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 39.667441, lng: 106.82552}
+            },
+            {
+                content: "地址：北京国贸三期<br>" +
+                "联系电话：400-0476-123",
+                title: "北京校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 39.917892, lng: 116.465076}
+            },
+            {
+                content: "地址：包头万达广场（百货）5楼华拓教育<br>" +
+                "联系电话：13171230686",
+                title: "包头校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 40.664528, lng: 109.859152}
+            },
+            {
+                content: "地址：呼和浩特市新城区新华大街富邦大厦四楼华拓教育责创培优<br>" +
+                "联系电话：15247173518",
+                title: "呼和浩特校区",
+                imageOffset: {width: -46, height: -21},
+                position: {lat: 40.833627, lng: 111.70261}
+            }
+        ];
+        for (var index = 0; index < markers.length; index++) {
+            var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                })
+            });
+            var label = new BMap.Label(markers[index].title, {offset: new BMap.Size(25, 5)});
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+            marker.setLabel(label);
+            addClickHandler(marker, infoWindow);
+            map.addOverlay(marker);
+        }
+        ;
+        var plOpts = [];
+        var plPath = [];
+        for (var index = 0; index < plOpts.length; index++) {
+            var polyline = new BMap.Polyline(plPath[index], plOpts[index]);
+            map.addOverlay(polyline);
+        }
+    }
+    //向地图添加控件
+    function addMapControl() {
+        var scaleControl = new BMap.ScaleControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT, type: 0});
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true});
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+</script>
+</body>
+</html>
